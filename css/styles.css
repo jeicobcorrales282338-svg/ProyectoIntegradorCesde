@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: #f8f8f8;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.top-strip {
+    height: 16px;
+    background: #575757;
+    border-bottom: 1px solid #bdbdbd
+}
+
+.site-header {
+    height: 174px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 38% auto 88px 158px;
+    align-items: center;
+    padding: 0 42px 0 39px;
+    border-bottom: 1px solid #d0d0d0;
+    box-shadow: 0 23px 29px rgba(0, 0, 0, .17);
+    position: relative;
+    z-index: 2
+}
+
+.brand img {
+    width: 170px;
+    height: 126px;
+    object-fit: cover
+}
+
+.main-nav {
+    display: flex;
+    gap: 27px;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.main-nav a,
+.account b {
+    color: #777;
+    font-size: 23px;
+    font-weight: 700
+}
+
+.main-nav a:hover,
+.account:hover b {
+    text-decoration: underline
+}
+
+.cart {
+    text-decoration: none;
+    text-align: center;
+    color: #777;
+    font-size: 58px;
+    line-height: 1;
+    filter: grayscale(1);
+    transform: scaleX(-1)
+}
+
+.account {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #777;
+    gap: 7px
+}
+
+.person {
+    font-size: 72px;
+    line-height: .6;
+    position: relative
+}
+
+.person:after {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 38px;
+    border-radius: 60px 60px 15px 15px;
+    background: #777;
+    margin: -2px auto 0
+}
+
+.hero-space {
+    height: 107px;
+    background: linear-gradient(#f1f1f1, #fff)
+}
+
+.about {
+    background: #fff;
+    padding: 0 48px
+}
+
+.about h1 {
+    margin: 4px 0 28px;
+    color: #aaa;
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 700
+}
+
+.row {
+    display: grid;
+    align-items: stretch
+}
+
+.row-one {
+    grid-template-columns: 43% 57%
+}
+
+.row-two {
+    grid-template-columns: 55% 45%;
+    margin-top: 38px
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.workshop {
+    min-height: 426px
+}
+
+.bracelet {
+    min-height: 394px
+}
+
+.copy {
+    padding: 0 9px;
+    font-size: 20px;
+    line-height: 1.34;
+    text-align: justify
+}
+
+.copy p {
+    margin: 0 0 27px
+}
+
+.row-two .copy {
+    padding: 0 29px 0 0
+}
+
+.site-footer {
+    min-height: 208px;
+    background: #575757;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 32% 39% 29%;
+    align-items: center;
+    padding: 12px 48px 13px
+}
+
+.footer-account {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.footer-login {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 145px
+}
+
+.footer-login strong {
+    font-family: Georgia, serif;
+    font-size: 25px
+}
+
+.footer-person {
+    font-size: 53px;
+    line-height: .7
+}
+
+.footer-person:after {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 27px;
+    border-radius: 45px 45px 10px 10px;
+    background: #fff;
+    margin: 0 auto 11px
+}
+
+.socials {
+    display: flex;
+    gap: 9px;
+    margin-top: 25px
+}
+
+.socials img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 9px
+}
+
+.footer-brand {
+    justify-self: center
+}
+
+.footer-brand img {
+    width: 193px;
+    height: 145px;
+    object-fit: cover;
+    filter: grayscale(1) brightness(2.7)
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-self: end
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 58px auto;
+    align-items: center
+}
+
+.footer-nav span {
+    font-size: 43px;
+    text-align: center
+}
+
+@media(max-width:760px) {
+    .site-header {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        padding: 14px 18px;
+        gap: 12px
+    }
+
+    .brand img {
+        width: 135px;
+        height: 100px
+    }
+
+    .main-nav {
+        grid-column: 1/-1;
+        grid-row: 2;
+        justify-content: center;
+        gap: 16px
+    }
+
+    .main-nav a,
+    .account b {
+        font-size: 17px
+    }
+
+    .cart {
+        font-size: 42px
+    }
+
+    .account {
+        position: absolute;
+        right: 12px;
+        top: 25px
+    }
+
+    .person {
+        font-size: 42px
+    }
+
+    .person:after {
+        width: 40px;
+        height: 22px
+    }
+
+    .hero-space {
+        height: 70px
+    }
+
+    .about {
+        padding: 0 22px
+    }
+
+    .about h1 {
+        font-size: 30px
+    }
+
+    .row-one,
+    .row-two {
+        grid-template-columns: 1fr
+    }
+
+    .row-two .copy {
+        padding: 0 9px
+    }
+
+    .row-two .bracelet {
+        grid-row: 1
+    }
+
+    .copy {
+        font-size: 17px
+    }
+
+    .site-footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center
+    }
+
+    .footer-account,
+    .footer-brand,
+    .footer-nav {
+        justify-self: center
+    }
+
+    .socials {
+        justify-content: center
+    }
+
+    .footer-login {
+        margin: auto
+    }
+
+    .footer-nav {
+        align-items: start
+    }
+}

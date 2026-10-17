@@ -1,0 +1,138 @@
+/* Menu global */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* barra de menu*/
+.logosNav{
+    width: 40px;
+    height: 40px;
+}
+#logo{
+    width: 140px;
+   margin-left: 30px;
+}
+#carrito{
+    width: 40px;
+    height: 40px;
+}
+.barraNavegacion{
+    width: 100%;
+}
+#listaIzq{
+
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    width: 40%;
+    list-style-type : none;
+}
+#listaDer{
+    display: flex;
+    width: 60%;
+    justify-content: end;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type : none;
+}
+.lista{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+#logoText{
+    display: flex;
+    justify-content: center;
+}
+
+.diseño-boton{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+   margin-bottom: 0;
+
+}
+.diseño-boton:hover{
+    text-decoration: none;
+background-color: darkgrey;
+ color: aliceblue;
+ margin-bottom: 0;
+}
+
+
+/* pie de pagina */
+
+
+#listaPiePagina{
+    
+    background-color: gray;
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+#parteIzq{
+    
+    display: flex;
+    width: 20%;
+    justify-content:end ;
+   
+}
+#parteCentral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+   
+}
+#logoPiePagina{
+    height: 140px;
+    width: 140px;
+}
+#parteDer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+   
+}
+.logoDer{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+   
+}
+.pie-pagina-lista{
+    margin-top: 15px;
+}
+.espacio{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.espacio:hover{
+background-color:rgb(76, 76, 76);
+border-radius: 2px;
+}
+
+#piePagina{
+    display: flex;
+}
+#listaPiePagina li p{
+    color: white;
+}
+.logoIzq{
+    margin-top:50px ;
+    height: 50px;
+    width: 50px;
+}
+#logoTextIzq{
+    text-align: center;
+    color: white;
+}
+.diseño-lista-img a:hover{
+    opacity: 0.8;
+}

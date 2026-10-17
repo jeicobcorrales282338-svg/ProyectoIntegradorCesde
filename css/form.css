@@ -1,0 +1,112 @@
+
+.caja-login {
+    width: 50%;
+    margin: 80px auto;
+    padding: 18px 8% 55px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0 5px 15px #aaaaaa;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #aaaaaa;
+}
+
+
+
+.campo label {
+    display: block;
+    color: #888888;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+   
+
+}
+
+.campo input {
+    display: block;
+    width: 80%;
+    height: 65px;
+    background-color: #d9d9d9;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+     
+}
+
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 10%;
+}
+
+.botones button {
+    width: 40%;
+    height: 66px;
+    background-color: #a6a5a2;
+    color: white;
+    border: none;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #777777;
+}
+
+/* Recuperar contraseña */
+.recuperar {
+    margin-top: 20px;
+}
+
+.recuperar a {
+    color: black;
+    font-size: 20px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    .caja-login {
+        width: 50%;
+        padding: 25px 6%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .campo label {
+        font-size: 22px;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    .botones {
+        gap: 12px;
+    }
+
+    .botones button {
+        font-size: 18px;
+        height: 55px;
+    }
+
+    .recuperar a {
+        font-size: 16px;
+    }
+}
+
+
