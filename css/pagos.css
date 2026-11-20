@@ -1,0 +1,67 @@
+ body {
+            background-color: #e0e0e0;
+            font-family: Arial;
+        }
+
+        .caja {
+            background-color: white;
+            width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: gray;
+        }
+
+        p {
+            color: gray;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+       
+        .fila {
+            display: flex;
+            gap: 10px;
+        }
+
+        .fila section {
+            width: 50%;
+        }
+
+        .tarjetas {
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #a3a3a3;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            font-weight: bold;
+            display: block;
+            margin: 20px auto 10px auto;
+        }
+        .pago {
+            width: 230px;
+            
+        }
+     .tarjetas img {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+}
+input, select {
+    background-color: #d9d9d9;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    color: gray;
+    font-weight: bold;
+}
