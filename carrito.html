@@ -1,16 +1,14 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulcera Luna - Registro de pago</title>
-    <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/diseñoGlobal.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulcera Luna Bracelets</title>
+  <link rel="stylesheet" href="css/diseñoGlobal.css">
+  <link rel="stylesheet" href="css/carrito.css">
 </head>
 
-<body>
  <!--menu de navegación-->
         <nav class="barraNavegacion">
             <ol class="lista">
@@ -22,7 +20,7 @@
                     <li class="diseño-lista"><a class="diseño-boton" href="tienda.html">Tienda</a></li>
                     <li class="diseño-lista"><a class="diseño-boton" href="">Contacto</a></li>
                     <li class="diseño-lista"><a class="diseño-boton" href="nosotros.html">Nostros</a></li>
-                    <li><img id="carrito" src="img/compra.png" alt="carritoCompra"><a href="carrito.html"></a></li>
+                    <li><img id="carrito" src="img/compra.png" alt="carritoCompra"><a href="carrito.html">carrito</a></li>
                     <li class="diseño-lista-img">
                         <figure>
                             <a href="logIn.html"><img class="logosNav" src="img/usuario.png" alt=""></a>
@@ -36,57 +34,50 @@
         </nav>
 
 
-   <section class="caja">
-        <h2>Registro método de pago</h2>
 
-        <p>Método de pago:</p>
-<select>
-    <option>Nequi</option>
-    <option>PSE</option>
-    <option>Tarjeta débito</option>
-    <option>Tarjeta crédito</option>
-    <option>Visa</option>
-    <option>Mastercard</option>
-    <option>Amex</option>
-</select>
-
-        <section class="fila">
-            <section>
-                <p>País:</p>
-                <input type="text" value="Colombia">
-            </section>
-            <section>
-                <p>Celular</p>
-                <input type="text" value="+57 123456789">
-            </section>
+  <main>
+    <section class="hero-space" aria-hidden="true"></section>
+    <section class="about">
+      <h1>Finalizar compra</h1>
+      <div class="rowcart">
+        <img class="photo workshopcart"
+          src="img/5.jpg"
+          alt="">
+        </img>
+        <section class="producto-infocart">
+          <h3>Aretes de cuarzo verde y Yute</h3>
+          <p>25.000</p>
         </section>
-
-        <p>Dirección de entrega:</p>
-        <input type="text">
-
-        <p>Información de la tarjeta:</p>
-        <input type="text" value="1234 1234 1234 1234">
-
-        <br><br>
-
-        <section class="fila">
-            <section>
-                <input type="text" value="MM/AA">
-            </section>
-            <section>
-                <input type="text" value="CVC">
-            </section>
+        <section class="producto-cantidadcart">
+          <button class="diseño-botoncart">+</button>
+          <span>1</span>
+          <button class="diseño-botoncart">-</button>
         </section>
-
-        <section class="tarjetas">
-           <img src="/img/metodo pago.png" alt="metodo de pago ">
+      </section>
+      <section class="rowcart">
+        <img class="photo workshopcart"
+          src="img/2.jpg"
+          alt="">
+        </img>
+        <section class="producto-infocart">
+          <h3>Aretes de colibrí</h3>
+          <p>30.000</p>
         </section>
-
-        <button>Registrar</button>
+        <section class="producto-cantidadcart">
+          <button class="diseño-botoncart">+</button>
+          <span>1</span>
+          <button class="diseño-botoncart">-</button>
+        </section>
+      </section>
+      <section class="cartpay">
+      <a href="pagos.html"><button class="diseño-cartpay" align-items="center">FINALIZAR PEDIDO: $55.000</button></a>
+      </section>
     </section>
+  </main>
 
-</body>
-    <!-- PIE DE PAGINA -->
+  
+
+  <!-- PIE DE PAGINA -->
    <footer>
     <section class="piePagina">
         <ol id="listaPiePagina">
@@ -106,10 +97,5 @@
         </ol>
     </section>
 </footer>
-
-   
-
-   
-
 </body>
 </html>
